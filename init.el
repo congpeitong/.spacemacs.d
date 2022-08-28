@@ -431,7 +431,7 @@ It should only modify the values of Spacemacs settings."
    ;; When used in a plist, `visual' takes precedence over `relative'.
    ;; (default nil)
    ;; 显示行号
-   dotspacemacs-line-numbers t
+   dotspacemacs-line-numbers nil
 
    ;; Code folding method. Possible values are `evil', `origami' and `vimish'.
    ;; (default 'evil)
@@ -588,12 +588,12 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
   ;; 定制时间显示格式
-  (setq display-time-format "%Y年-%m月-%d日 %a %H:%M")
-  (setq display-time-default-load-average nil)
+  ;;(setq display-time-format "%Y年-%m月-%d日 %a %H:%M")
+  ;;(setq display-time-default-load-average nil)
   ;; 开启时间显示
-  (display-time-mode t) 
+  ;;(display-time-mode t) 
   ;; 开启语法检查
-  (global-flycheck-mode t)
+  ;; (global-flycheck-mode t)
   ;; 电池
   ;;(fancy-battery-mode nil)
   

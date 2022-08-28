@@ -39,7 +39,7 @@
 ;;   `congpeitong/post-init-PACKAGE' to customize the package as it is loaded.
 
 ;;; Code:
-
+;; 一些layer用到的package以及相关配置函数
 (defconst congpeitong-packages
   '()
   "The list of Lisp packages required by the congpeitong layer.

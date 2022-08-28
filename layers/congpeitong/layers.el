@@ -9,7 +9,7 @@
 ;; This file is not part of GNU Emacs.
 ;;
 ;;; License: GPLv3
-
+;; 申请一些额外的layer依赖
 (configuration-layer/declare-layers '(
                                       congpeitong-org
                                       ))
