@@ -52,7 +52,7 @@ This function should only modify configuration layer settings."
      markdown
      python
      ;;multiple-cursors
-     ;;org
+     org
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -586,15 +586,4 @@ dump."
 This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
-before packages are loaded."
-  ;; 定制时间显示格式
-  ;;(setq display-time-format "%Y年-%m月-%d日 %a %H:%M")
-  ;;(setq display-time-default-load-average nil)
-  ;; 开启时间显示
-  ;;(display-time-mode t) 
-  ;; 开启语法检查
-  ;; (global-flycheck-mode t)
-  ;; 电池
-  ;;(fancy-battery-mode nil)
-  
-)
+before packages are loaded.")

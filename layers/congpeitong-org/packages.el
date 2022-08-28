@@ -41,14 +41,20 @@
 ;;; Code:
 
 (defconst congpeitong-org-packages
-  '()
+  '(
+    (org :location built-in)
+    org-superstar)
   )
 
 
 
 
-(defun zilongshanren-org/post-init-org-superstar ()
+(defun congpeitong-org/post-init-org-superstar ()
   (progn
     (setq org-superstar-headline-bullets-list '("☰" "☷" "☯" "☭"))
     (setq org-ellipsis " ▼ ")
     ))
+(defun congpeitong-org/post-init-org()
+  (add-hook 'org-mode-hook (lambda() (spacemacs/toggle-line-numbers-off)) 'append)
+  (with-eval-after-load 'org))
+

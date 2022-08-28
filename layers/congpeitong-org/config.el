@@ -65,3 +65,4 @@
 ;; 默认缩进内容, 隐藏标题栏里的一堆星号
 (setq org-startup-indented t)
 (setq org-ellipsis " ▾") ;; 收缩内容,将.....替换为倒三角
+(setq org-bullets-bullet-list '("☰" "☷" "☯" "☭" "■" "◆" "▲" "▶"))
