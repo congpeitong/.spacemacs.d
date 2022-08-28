@@ -50,6 +50,7 @@ This function should only modify configuration layer settings."
      helm
      lsp
      markdown
+     python
      ;;multiple-cursors
      ;;org
      ;; (shell :variables
@@ -62,6 +63,7 @@ This function should only modify configuration layer settings."
      chinese
      ;;unicode-fonts
      java
+     congpeitong
      )
 
 
@@ -79,45 +81,7 @@ This function should only modify configuration layer settings."
    dotspacemacs-frozen-packages '()
 
    ;; A list of packages that will not be installed and loaded.
-   dotspacemacs-excluded-packages '(
-    magit-gh-pulls
-    magit-gitflow
-    evil-mc
-    skewer-mode
-    vi-tilde-fringe
-    coffee-mode
-    ace-jump-helm-line
-    evil-tutor
-    eyebrowse
-    stickyfunc-enhance
-    smooth-scrolling
-    org-repo-todo
-    chinese-wbim
-    chinese-pyim
-    srefactor
-    org-download
-    org-timer
-    org-plus-contrib
-    org-tree-slide
-    git-gutter
-    git-gutter-fringe
-    spaceline
-    ;; i prefer iedit
-    multiple-cursors
-    ;; disable it for lispy-mode
-    ;;https://github.com/abo-abo/lispy/issues/137
-    evil-escape
-    ;;At first, I should disable hydra in zilongshanren layer and install clj-refactor, after it is installed.
-    ;; I could re-enable it again in zilongshanren layer.
-    ;; clj-refactor
-    ;;remove from spacemacs distribution
-    ;; neotree
-    leuven-theme
-    gh-md
-    evil-lisp-state
-    spray
-    doc-view
-    lorem-ipsum)
+   dotspacemacs-excluded-packages '()
 
    ;; Defines the behaviour of Spacemacs when installing packages.
    ;; Possible values are `used-only', `used-but-keep-unused' and `all'.
@@ -213,7 +177,7 @@ It should only modify the values of Spacemacs settings."
    ;; with `:variables' keyword (similar to layers). Check the editing styles
    ;; section of the documentation for details on available variables.
    ;; (default 'vim)
-   dotspacemacs-editing-style 'vim
+   dotspacemacs-editing-style 'emacs
 
    ;; If non-nil show the version string in the Spacemacs buffer. It will
    ;; appear as (spacemacs version)@(emacs version)
@@ -297,7 +261,7 @@ It should only modify the values of Spacemacs settings."
    ;; refer to the DOCUMENTATION.org for more info on how to create your own
    ;; spaceline theme. Value can be a symbol or list with additional properties.
    ;; (default '(spacemacs :separator wave :separator-scale 1.5))
-   dotspacemacs-mode-line-theme '(vim-powerline :separator slant :separator-scale 1.5)
+   dotspacemacs-mode-line-theme '(spacemacs :separator slant :separator-scale 1.5)
 
    ;; If non-nil the cursor color matches the state color in GUI Emacs.
    ;; (default t)
@@ -341,7 +305,7 @@ It should only modify the values of Spacemacs settings."
    ;; and TAB or `C-m' and `RET'.
    ;; In the terminal, these pairs are generally indistinguishable, so this only
    ;; works in the GUI. (default nil)
-   dotspacemacs-distinguish-gui-tab nil
+   dotspacemacs-distinguish-gui-tab t
 
    ;; Name of the default layout (default "Default")
    dotspacemacs-default-layout-name "Welcome to Spacemacs"
@@ -437,7 +401,7 @@ It should only modify the values of Spacemacs settings."
    ;; If non-nil unicode symbols are displayed in the mode line.
    ;; If you use Emacs as a daemon and wants unicode characters only in GUI set
    ;; the value to quoted `display-graphic-p'. (default t)
-   dotspacemacs-mode-line-unicode-symbols nil
+   dotspacemacs-mode-line-unicode-symbols t
 
    ;; If non-nil smooth scrolling (native-scrolling) is enabled. Smooth
    ;; scrolling overrides the default behavior of Emacs which recenters point
@@ -632,9 +596,5 @@ before packages are loaded."
   (global-flycheck-mode t)
   ;; 电池
   ;;(fancy-battery-mode nil)
-  ;; org-mode
-  (setq org-todo-keywords
-        (quote ((sequence "TODO(t)" "STARTED(s)" "|" "DONE(d!/!)")
-                (sequence "WAITING(w@/!)" "SOMEDAY(S)" "|" "CANCELLED(c@/!)" "MEETING(m)" "PHONE(p)"))))
-  (setq powerline-default-separator 'slant)
+  
 )
