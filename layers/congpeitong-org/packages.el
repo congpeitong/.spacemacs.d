@@ -38,8 +38,7 @@
 ;;   define the functions `congpeitong-org/pre-init-PACKAGE' and/or
 ;;   `congpeitong-org/post-init-PACKAGE' to customize the package as it is loaded.
 
-;;; Code:
-
+;;; Code: aaaa
 (defconst congpeitong-org-packages
   '(
     (org :location built-in)
@@ -51,7 +50,7 @@
 
 (defun congpeitong-org/post-init-org-superstar ()
   (progn
-    (setq org-superstar-headline-bullets-list '("☰" "☷" "☯" "☭"))
+    (setq org-superstar-headline-bullets-list '("☯" "☭" "◉" "○" "✸" "✿"))
     (setq org-ellipsis " ▼ ")
     ))
 (defun congpeitong-org/post-init-org()
