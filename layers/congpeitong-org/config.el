@@ -66,3 +66,20 @@
 (setq org-startup-indented t)
 (setq org-ellipsis " ▾") ;; 收缩内容,将.....替换为倒三角
 (setq org-bullets-bullet-list '("☰" "☷" "☯" "☭" "■" "◆" "▲" "▶"))
+
+(defface my-org-emphasis-bold
+  '((default :inherit bold)
+    (((class color) (min-colors 88) (background light)) ;condition
+     :foreground "#a60000")
+    (((class color) (min-colors 88) (background dark))
+     :foreground "#ff8059"))
+  "My bold emphasis for Org.")
+
+
+(setq org-emphasis-alist
+      '(("*" my-org-emphasis-bold)
+	      ("/" my-org-emphasis-italic)
+	      ("_" my-org-emphasis-underline)
+	      ("=" my-org-emphasis-verbatim)
+	      ("~" my-org-emphasis-code)	
+	      ("+" my-org-emphasis-strike-through)))

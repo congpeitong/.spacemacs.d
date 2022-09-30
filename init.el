@@ -50,19 +50,19 @@ This function should only modify configuration layer settings."
      helm
      lsp
      markdown
-     python
+     ;;python
      ;;multiple-cursors
      org
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
-     spell-checking
-     syntax-checking
+     ;;spell-checking
+     ;;syntax-checking
      version-control
      treemacs
      chinese
      ;;unicode-fonts
-     java
+     ;;java
      congpeitong
      )
 
